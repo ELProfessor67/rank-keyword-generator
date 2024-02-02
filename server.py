@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import requests
 from bs4 import BeautifulSoup
-
+import os
 app = Flask(__name__)
 
 def get_html_content(url):
